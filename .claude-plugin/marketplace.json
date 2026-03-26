@@ -1,0 +1,16 @@
+{
+  "name": "nanoclaw-community-skills",
+  "owner": {
+    "name": "NanoCo.ai"
+  },
+  "metadata": {
+    "description": "Community-contributed skills for NanoClaw"
+  },
+  "plugins": [
+    {
+      "name": "nanoclaw-community-skills",
+      "source": "./plugins/nanoclaw-community-skills",
+      "description": "Community-contributed NanoClaw skills"
+    }
+  ]
+}
