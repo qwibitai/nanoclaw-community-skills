@@ -2,13 +2,17 @@
 
 Community-contributed skills for [NanoClaw](https://github.com/qwibitai/nanoclaw). Anyone can submit a skill via pull request.
 
-This repo is a fork of NanoClaw that doubles as a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces):
-- **SKILL.md files** in `plugins/nanoclaw-community-skills/skills/` — instructions that Claude follows
-- **Skill branches** (`skill/*`) — code changes that get merged into user forks
+## Community Skills
 
-## Using Community Skills
+| Skill | Description | Author |
+|-------|-------------|--------|
+| `/add-instacart` | Instacart grocery cart automation via GraphQL API | [@abarbaccia](https://github.com/abarbaccia) |
+| `/add-changedetection` | changedetection.io website monitoring via MCP tools | [@henricook](https://github.com/henricook) |
+| `/add-quad-inbox` | Async file-based task handoff between container agents and host | [@jorgenclaw](https://github.com/jorgenclaw) |
 
-### Install the marketplace
+This repo is a fork of NanoClaw that doubles as a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces) — SKILL.md instructions in `plugins/` and `skill/*` branches with code changes.
+
+## Installing
 
 ```bash
 claude plugin install nanoclaw-community-skills@nanoclaw-community-skills --scope project
@@ -32,19 +36,9 @@ Or add to your `.claude/settings.json` for auto-loading on every session:
 }
 ```
 
-### Use a skill
+Once installed, community skills appear as slash commands. Type `/` and browse, or invoke directly. Skills that modify code will merge a branch into your fork — Claude handles everything.
 
-Once installed, community skills appear as slash commands. Just type `/` and browse, or invoke directly:
-
-```
-/add-notion-sync
-/add-daily-standup
-/add-expense-tracker
-```
-
-Skills that modify code will merge a branch into your fork — Claude handles the merge and walks you through setup.
-
-## Contributing a Skill
+## Contributing
 
 There are two types of community skills:
 
@@ -139,14 +133,6 @@ Type `/your-skill-name` to verify it loads correctly.
 2. A maintainer reviews the SKILL.md and any code changes
 3. Once approved, the SKILL.md merges to `main` and the skill branch (if any) is pushed
 4. The skill becomes available to anyone with the community marketplace installed
-
-## Community Skills
-
-| Skill | Description | Author |
-|-------|-------------|--------|
-| `/add-instacart` | Instacart grocery cart automation via GraphQL API | [@abarbaccia](https://github.com/abarbaccia) |
-| `/add-changedetection` | changedetection.io website monitoring via MCP tools | [@henricook](https://github.com/henricook) |
-| `/add-quad-inbox` | Async file-based task handoff between container agents and host | [@jorgenclaw](https://github.com/jorgenclaw) |
 
 ## License
 
