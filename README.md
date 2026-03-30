@@ -142,7 +142,11 @@ Type `/your-skill-name` to verify it loads correctly.
 
 ## Community Skills
 
-*No community skills yet — be the first to contribute!*
+| Skill | Description | Author |
+|-------|-------------|--------|
+| `/add-instacart` | Instacart grocery cart automation via GraphQL API | [@abarbaccia](https://github.com/abarbaccia) |
+| `/add-changedetection` | changedetection.io website monitoring via MCP tools | [@henricook](https://github.com/henricook) |
+| `/add-quad-inbox` | Async file-based task handoff between container agents and host | [@jorgenclaw](https://github.com/jorgenclaw) |
 
 ## License
 
