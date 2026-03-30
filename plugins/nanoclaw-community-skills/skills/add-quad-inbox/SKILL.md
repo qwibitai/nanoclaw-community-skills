@@ -9,6 +9,8 @@ description: "Add async file-based task inbox for container agent to host AI com
 
 Adds an async task handoff channel between NanoClaw container agents and Claude Code (Quad) running on the host. Container agents write natural-language task files; Claude Code reads and executes them on demand.
 
+**Note:** `/quad-inbox` asks for user confirmation before executing each task.
+
 ## What This Adds
 
 - **`quad-inbox/` directory** in the group's workspace — where agents drop task files
@@ -156,7 +158,9 @@ For each task, before making any changes:
 
 ### 4. Execute
 
-Apply the changes described in the task file. Follow the task's instructions faithfully.
+Before executing each task, use AskUserQuestion to show the user a summary of what the task will do and get confirmation. For sensitive changes (`.env`, credentials, system configs, files outside the project), ask for extra confirmation.
+
+After user confirms, apply the changes described in the task file.
 
 **Build rules:**
 - Run \`npm run build\` after any TypeScript/JavaScript file changes. If the build fails, fix the error before proceeding. Do not delete the task file until the build passes.

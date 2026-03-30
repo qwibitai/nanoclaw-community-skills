@@ -125,6 +125,12 @@ Write `groups/<group-name>/instacart_session.json`:
 }
 ```
 
+**Important:** Restrict file permissions since this file contains session credentials:
+
+```bash
+chmod 600 groups/<group-name>/instacart_session.json
+```
+
 ## Phase 4: Update Group CLAUDE.md
 
 Add an **Instacart Cart Automation** section to `groups/<group-name>/CLAUDE.md`. Tailor for the user's specific retailers and store selection rules. Template:
