@@ -2,5 +2,7 @@
   "name": "nanoclaw-community-skills",
   "description": "Community-contributed NanoClaw skills",
   "version": "0.1.0",
-  "author": "NanoClaw Community"
+  "author": {
+    "name": "NanoClaw Community"
+  }
 }
